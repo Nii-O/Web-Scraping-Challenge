@@ -1,4 +1,4 @@
-# Web Scraping Homework - Mission to Mars
+# Web Scraping Challenge - Mission to Mars
 
 ![mission_to_mars](Images/mission_to_mars.png)
 
@@ -6,7 +6,7 @@ In this assignment, you will build a web application that scrapes various websit
 
 ### Before You Begin
 
-1. Create a new repository for this project called `web-scraping-challenge`. **Do not add this homework to an existing repository**.
+1. Create a new repository for this project called `web-scraping-challenge`. **Do not add this challenge to an existing repository**.
 
 2. Clone the new repository to your computer.
 
@@ -116,7 +116,7 @@ To submit your work to BootCampSpot, create a new GitHub repository and upload t
 
 ## Rubric
 
-[Unit 12 Rubric - Web Scraping Homework - Mission to Mars](https://docs.google.com/document/d/1paGEIFS5yp2VQu6G8F45B4uj1t1t29zL73KEQrD0xpo/edit?usp=sharing)
+[Unit 12 Rubric - Web Scraping challenge - Mission to Mars](https://docs.google.com/document/d/1paGEIFS5yp2VQu6G8F45B4uj1t1t29zL73KEQrD0xpo/edit?usp=sharing)
 
 - - -
 
