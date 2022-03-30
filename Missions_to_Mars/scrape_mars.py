@@ -14,9 +14,9 @@ def scrape_all():
    data = {
        "news_title": news_title,
        "news_paragraph": news_paragraph,
-       "featured_image": featured_image(browser),
-       "facts": mars_facts(),
-       "hemispheres": mars_hemisphere(browser),
+       "featured_image_url": featured_image(browser),
+       "mars_facts_html": mars_facts(),
+       "hemisphere_image_url": mars_hemisphere(browser),
        "last_modified": dt.datetime.now()
    }
    # Stop webdriver and return data
@@ -65,8 +65,8 @@ def mars_facts():
     tables_df= tables[0]
     tables_df=tables_df.rename(columns={0:'Description', 1:'Mars', 2:'Earth'})
     tables_df.set_index('Description')
-    tables_df.to_html("Mars Facts.html")
-    return(tables_df)
+    mars_facts_html=tables_df.to_html("Mars Facts.html")
+    return(mars_facts_html)
 
 
 def mars_hemisphere(browser):
@@ -81,7 +81,7 @@ def mars_hemisphere(browser):
         news_soup3 = soup(html3, 'html.parser')
         try:
             slide_elem3 = news_soup3.select_one('img.wide-image')
-            slide_elem3_url= item +'/'+ slide_elem3['src']
+            slide_elem3_url= 'https://marshemispheres.com/'+ slide_elem3['src']
             slide_elem4 = news_soup3.select_one('div', class_='cover')
         except AttributeError:
             return None
