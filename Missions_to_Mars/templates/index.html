@@ -56,37 +56,17 @@
 <div class="container">
     <div class="row row-cols-4">
 
+        {% for hemisphere in mars.hemisphere_image_url %}
         <div class="col">
-            <img src="{{ mars.hemisphere_image_url[0]['img_url']}}" class="card-img-top" alt="Cerberus">
+            <img src="{{hemisphere['img_url']}}" class="card-img-top" alt="---">
             <div class="card-body text-center">
-                <h5 class="card-title">{{mars.hemisphere_image_url[0]['Title']}}</h5>
+                <h5 class="card-title">{{hemisphere['Title']}}</h5>
             </div>
         </div>
-
-        <div class="col">
-            <img src="{{ mars.hemisphere_image_url[1]['img_url']}}" class="card-img-top" alt="Schiaparelli">
-            <div class="card-body text-center">
-                <h5 class="card-title">{{mars.hemisphere_image_url[1]['Title']}}</h5>
-            </div>
-        </div>
-
-        <div class="col">
-            <img src="{{ mars.hemisphere_image_url[2]['img_url']}}" class="card-img-top" alt="Syrtis">
-            <div class="card-body text-center">
-                <h5 class="card-title">{{mars.hemisphere_image_url[2]['Title']}}</h5>
-            </div>
-        </div>
-
-        <div class="col">
-            <img src="{{ mars.hemisphere_image_url[3]['img_url']}}" class="card-img-top" alt="Valles Marineris">
-            <div class="card-body text-center">
-                <h5 class="card-title">{{mars.hemisphere_image_url[3]['Title']}}</h5>
-            </div>
-        </div>
+      {% endfor%}
 
     </div>
-  </div>
-
+</div>
 
 </body>
 </html>
