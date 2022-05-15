@@ -15,7 +15,7 @@ def scrape_all():
        "news_title": news_title,
        "news_paragraph": news_paragraph,
        "featured_image_url": featured_image(browser),
-       "mars_facts_html": mars_facts(),
+      # "mars_facts_html": mars_facts_html(),
        "hemisphere_image_url": mars_hemisphere(browser),
        "last_modified": dt.datetime.now()
    }
@@ -58,7 +58,7 @@ def featured_image(browser):
     return(featured_image_url)
 
 
-def mars_facts():
+def mars_facts_html():
     #Mars Facts
     url2 = 'https://galaxyfacts-mars.com/'
     tables = pd.read_html(url2)
